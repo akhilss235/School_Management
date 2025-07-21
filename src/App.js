@@ -29,12 +29,12 @@ function App() {
   const navigate = useNavigate();
 
   // Effect to check if the user is authenticated
-  useEffect(() => {
-    const token = localStorage.getItem("token") || sessionStorage.getItem("token");
-    if (!token) {
-      navigate('/'); // Redirect to login if no token is found
-    }
-  }, [navigate]);
+  // useEffect(() => {
+  //   const token = localStorage.getItem("token") || sessionStorage.getItem("token");
+  //   if (!token) {
+  //     navigate('/'); // Redirect to login if no token is found
+  //   }
+  // }, [navigate]);
 
   
   return (
